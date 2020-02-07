@@ -1,0 +1,51 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "functions": [
+                    {
+                        "function": "minecraft:set_count",
+                        "count": {
+                          "min": 1.0,
+                          "max": 2.0,
+                          "type": "minecraft:uniform"
+                        }
+                    },
+                    {
+                        "function": "minecraft:apply_bonus",
+                        "enchantment": "minecraft:fortune",
+                        "formula": "minecraft:ore_drops"
+                    },
+                    {
+                        "function":"set_nbt",
+                        "tag":"{Enchantments:[{id:\"minecraft:unbreaking\",lvl:1s}]}"
+                    },
+                    {
+                        "function":"set_nbt",
+                        "tag":"{HideFlags:1}"
+                    },
+                    {
+                        "function":"set_nbt",
+                        "tag":"{CustomModelData:1}"
+                    },
+                    {
+                        "function":"set_name",
+                        "name":{
+                            "text":"Spawner Shard",
+                            "color":"gold"
+                        }
+                    },
+                    {
+                        "function": "minecraft:explosion_decay"
+                    }
+                ],
+                "name": "minecraft:iron_bars"
+              }
+        ]
+      }
+    ]
+  }

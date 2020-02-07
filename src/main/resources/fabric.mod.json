@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "spawnershards",
+  "version": "${version}",
+
+  "name": "Spawner Shards",
+  "description": "Spawners dropping shards, which can later be crafted back into spawners.",
+  "authors": [
+    "samo_lego"
+  ],
+  "contact": {
+    "sources": "https://github.com/samolego/SpawnerShards"
+  },
+
+  "license": "MIT",
+  "icon": "assets/spawnershards/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "org.samo_lego.spawnershards.SpawnerShards"
+    ]
+  },
+  "mixins": [
+    "spawnershards.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

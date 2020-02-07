@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "org.samo_lego.spawnershards.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "server": [
+    "MixinBlock"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
